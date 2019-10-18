@@ -1,12 +1,11 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
+import { KeyCodes } from '../../constants';
 
 export default class KeyboardListener extends Component {
 
     static propTypes = {
-    };
-
-    static defaultProps = {
+        onKeyDown: PropTypes.func.isRequired,
     };
 
     componentDidMount() {
@@ -19,8 +18,11 @@ export default class KeyboardListener extends Component {
 
     handleKeyDown = event => {
         const {keyCode} = event;
+        const allowedKeyCodes = Object.values(KeyCodes);
 
-        console.log(keyCode);
+        if (allowedKeyCodes.includes(keyCode)) {
+            this.props.onKeyDown(keyCode);
+        }
         
         return;
     };

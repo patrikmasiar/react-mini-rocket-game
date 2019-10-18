@@ -1,7 +1,7 @@
 import AppColors from './colors';
-import KeyKodes from './keyCodes';
+import KeyCodes from './keyCodes';
 
 export {
     AppColors,
-    KeyKodes,
+    KeyCodes,
 };
