@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Turret+Road:400,700&display=swap&subset=latin-ext');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Turret Road', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #321A54;
+  color: #fff;
 }
 
 code {

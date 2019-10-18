@@ -1,10 +1,15 @@
 import React from 'react';
+import {AppConsumer} from './store';
+import ContainersController from './containers/ContainersController';
 
-function App() {
-  return (
-    <div>
-    </div>
-  );
-}
+const App = () => (
+  <div className="container">
+    <AppConsumer>
+      {value => (
+        <ContainersController appData={value} />
+      )}
+    </AppConsumer>
+  </div>
+);
 
 export default App;
