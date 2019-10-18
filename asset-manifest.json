@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/react-mini-rocket-game/static/css/main.49b9e155.chunk.css",
-    "main.js": "/react-mini-rocket-game/static/js/main.0ce59977.chunk.js",
-    "main.js.map": "/react-mini-rocket-game/static/js/main.0ce59977.chunk.js.map",
+    "main.css": "/react-mini-rocket-game/static/css/main.4d18c8c3.chunk.css",
+    "main.js": "/react-mini-rocket-game/static/js/main.a07b3661.chunk.js",
+    "main.js.map": "/react-mini-rocket-game/static/js/main.a07b3661.chunk.js.map",
     "runtime-main.js": "/react-mini-rocket-game/static/js/runtime-main.81a4de54.js",
     "runtime-main.js.map": "/react-mini-rocket-game/static/js/runtime-main.81a4de54.js.map",
-    "static/js/2.65317f17.chunk.js": "/react-mini-rocket-game/static/js/2.65317f17.chunk.js",
-    "static/js/2.65317f17.chunk.js.map": "/react-mini-rocket-game/static/js/2.65317f17.chunk.js.map",
+    "static/js/2.6231eaf3.chunk.js": "/react-mini-rocket-game/static/js/2.6231eaf3.chunk.js",
+    "static/js/2.6231eaf3.chunk.js.map": "/react-mini-rocket-game/static/js/2.6231eaf3.chunk.js.map",
     "index.html": "/react-mini-rocket-game/index.html",
-    "precache-manifest.fc8b3dbf16277786940349969e193c7c.js": "/react-mini-rocket-game/precache-manifest.fc8b3dbf16277786940349969e193c7c.js",
+    "precache-manifest.8b80e8348aa2d21feab6bde8588b3fa7.js": "/react-mini-rocket-game/precache-manifest.8b80e8348aa2d21feab6bde8588b3fa7.js",
     "service-worker.js": "/react-mini-rocket-game/service-worker.js",
-    "static/css/main.49b9e155.chunk.css.map": "/react-mini-rocket-game/static/css/main.49b9e155.chunk.css.map",
+    "static/css/main.4d18c8c3.chunk.css.map": "/react-mini-rocket-game/static/css/main.4d18c8c3.chunk.css.map",
+    "static/media/style.module.css": "/react-mini-rocket-game/static/media/cosmonaut.8f36471d.png",
     "static/media/rocketone.png": "/react-mini-rocket-game/static/media/rocketone.884f8fa0.png",
     "static/media/rockettwo.png": "/react-mini-rocket-game/static/media/rockettwo.3b15ccbd.png"
   },
   "entrypoints": [
     "static/js/runtime-main.81a4de54.js",
-    "static/js/2.65317f17.chunk.js",
-    "static/css/main.49b9e155.chunk.css",
-    "static/js/main.0ce59977.chunk.js"
+    "static/js/2.6231eaf3.chunk.js",
+    "static/css/main.4d18c8c3.chunk.css",
+    "static/js/main.a07b3661.chunk.js"
   ]
 }
