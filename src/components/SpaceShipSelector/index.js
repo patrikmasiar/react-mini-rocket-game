@@ -13,7 +13,6 @@ const SpaceShipSelector = () => {
                     id={spaceShip.id}
                     url={spaceShip.url}
                     name={spaceShip.name}
-                    isSelected={false}
                 />
             ))}
         </div>
