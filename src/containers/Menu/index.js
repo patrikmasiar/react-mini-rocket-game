@@ -17,7 +17,7 @@ const Menu = () => (
                     return;
                 }
 
-                console.log(value);
+                value.setScreenGame();
             }
 
             return (
