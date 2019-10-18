@@ -1,10 +1,11 @@
 import React from 'react';
+import style from './style.module.css';
 
 const Menu = () => {
 
     return (
-        <div>
-            menu
+        <div className={style.wrapper}>
+            <span className={style.title}>Select your Spaceship</span>
         </div>
     );
 };

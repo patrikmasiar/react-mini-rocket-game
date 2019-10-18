@@ -1,0 +1,13 @@
+.wrapper {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 35px;
+    text-shadow: 3px 3px 5px #000;
+}
