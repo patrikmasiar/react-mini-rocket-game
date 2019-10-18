@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    padding: 15px 30px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-image: url('../../images/cosmonaut.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.label {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.userName {
+    font-weight: 400;
+    margin-left: 5px;
+}

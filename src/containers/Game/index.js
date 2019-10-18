@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import style from './style.module.css';
 import KeyboardListener from '../../components/KeyboardListener';
+import TopBarInfo from '../../components/TopBarInfo';
 
 const Game = ({appData}) => {
 
@@ -10,8 +12,9 @@ const Game = ({appData}) => {
 
     return (
         <KeyboardListener onKeyDown={onKeyDown}>
-            <div style={{margin: 100}}>
-                NICKNAME: {appData.username}
+            <TopBarInfo username={appData.username} spaceshipId={appData.spaceshipId} />
+            <div>
+
             </div>
         </KeyboardListener>
     );
