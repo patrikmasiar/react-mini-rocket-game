@@ -1,45 +1,45 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import style from './style.module.css';
 import SpaceShipSelector from '../../components/SpaceShipSelector';
-import { AppConsumer } from '../../store';
 
-const Menu = () => (
-    <AppConsumer>
-        {value => {
-            const onStart = () => {
-                if (value.spaceshipId === null) {
-                    alert("Please, select spaceship!");
-                    return;
-                }
+const Menu = ({appData}) => {
+    const onStart = () => {
+        if (appData.spaceshipId === null) {
+            alert("Please, select spaceship!");
+            return;
+        }
 
-                if (value.username.length === 0) {
-                    alert("Please, insert your nickname!");
-                    return;
-                }
+        if (appData.username.length === 0) {
+            alert("Please, insert your nickname!");
+            return;
+        }
 
-                value.setScreenGame();
-            }
+        appData.setScreenGame();
+    }
 
-            return (
-                <div className={style.wrapper}>
-                    <span className={style.title}>Select your Spaceship</span>
-                    <SpaceShipSelector />
-                    <input
-                        className={style.input}
-                        placeholder="Your nickname"
-                        onChange={e => value.setUsername(e.target.value)}
-                    />
-                    <button
-                        type="button"
-                        className={style.button}
-                        onClick={onStart}
-                    >
-                        START!
-                    </button>
-                </div>
-            );
-        }}
-    </AppConsumer>
-);
+    return (
+        <div className={style.wrapper}>
+            <span className={style.title}>Select your Spaceship</span>
+            <SpaceShipSelector />
+            <input
+                className={style.input}
+                placeholder="Your nickname"
+                onChange={e => appData.setUsername(e.target.value)}
+            />
+            <button
+                type="button"
+                className={style.button}
+                onClick={onStart}
+            >
+                START!
+            </button>
+        </div>
+    );
+};
+
+Menu.propTypes = {
+    appData: PropTypes.object.isRequired,
+};
 
 export default Menu;

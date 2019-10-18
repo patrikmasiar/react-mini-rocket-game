@@ -3,9 +3,16 @@ import PropTypes from 'prop-types';
 import Menu from '../Menu';
 
 const ContainersController = ({appData}) => {
+    if (appData.screen === 'game') {
+        return (
+            <div>
+                game
+            </div>
+        );
+    }
     
     return (
-        <Menu />
+        <Menu appData={appData} />
     )
 };
 
