@@ -18,7 +18,8 @@
     margin-left: 40px;
 }
 
-.wrapper:hover {
+.wrapper:hover,
+.selected {
     background-color: rgba(0,0,0,0.1);
     border: 1px solid rgba(255,255,255,0.4)
 }
