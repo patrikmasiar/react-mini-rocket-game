@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-mini-rocket-game/static/css/main.52ddfa44.chunk.css",
+    "main.js": "/react-mini-rocket-game/static/js/main.9f979065.chunk.js",
+    "main.js.map": "/react-mini-rocket-game/static/js/main.9f979065.chunk.js.map",
+    "runtime-main.js": "/react-mini-rocket-game/static/js/runtime-main.81a4de54.js",
+    "runtime-main.js.map": "/react-mini-rocket-game/static/js/runtime-main.81a4de54.js.map",
+    "static/js/2.005d2c56.chunk.js": "/react-mini-rocket-game/static/js/2.005d2c56.chunk.js",
+    "static/js/2.005d2c56.chunk.js.map": "/react-mini-rocket-game/static/js/2.005d2c56.chunk.js.map",
+    "index.html": "/react-mini-rocket-game/index.html",
+    "precache-manifest.8ac484dad93acf7093c1539df897d386.js": "/react-mini-rocket-game/precache-manifest.8ac484dad93acf7093c1539df897d386.js",
+    "service-worker.js": "/react-mini-rocket-game/service-worker.js",
+    "static/css/main.52ddfa44.chunk.css.map": "/react-mini-rocket-game/static/css/main.52ddfa44.chunk.css.map",
+    "static/media/rocketone.png": "/react-mini-rocket-game/static/media/rocketone.884f8fa0.png",
+    "static/media/rockettwo.png": "/react-mini-rocket-game/static/media/rockettwo.3b15ccbd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.81a4de54.js",
+    "static/js/2.005d2c56.chunk.js",
+    "static/css/main.52ddfa44.chunk.css",
+    "static/js/main.9f979065.chunk.js"
+  ]
+}
