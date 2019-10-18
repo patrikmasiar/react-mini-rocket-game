@@ -8,6 +8,17 @@ const Menu = () => {
         <div className={style.wrapper}>
             <span className={style.title}>Select your Spaceship</span>
             <SpaceShipSelector />
+            <input
+                className={style.input}
+                placeholder="Your nickname"
+                required
+            />
+            <button
+                type="button"
+                className={style.button}
+            >
+                START!
+            </button>
         </div>
     );
 };
