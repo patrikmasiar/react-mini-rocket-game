@@ -4,8 +4,12 @@ import KeyboardListener from '../../components/KeyboardListener';
 
 const Game = ({appData}) => {
 
+    const onKeyDown = keyCode => {
+        console.log(keyCode)
+    };
+
     return (
-        <KeyboardListener>
+        <KeyboardListener onKeyDown={onKeyDown}>
             <div style={{margin: 100}}>
                 NICKNAME: {appData.username}
             </div>
