@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Menu from '../Menu';
+import Game from '../Game';
 
 const ContainersController = ({appData}) => {
     if (appData.screen === 'game') {
         return (
-            <div>
-                game
-            </div>
+            <Game appData={appData} />
         );
     }
     
