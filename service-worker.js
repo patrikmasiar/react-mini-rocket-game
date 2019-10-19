@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-mini-rocket-game/precache-manifest.9c8069fdd541d061ae4276552db0bf57.js"
+  "/react-mini-rocket-game/precache-manifest.c10c5a87279e74b3b7ef69423333dddf.js"
 );
 
 self.addEventListener('message', (event) => {

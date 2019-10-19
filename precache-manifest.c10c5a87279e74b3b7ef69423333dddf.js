@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6cc9d1901b2da7d8ae47cc10ec8297a9",
+    "revision": "1ebeb13434a38e88bec583bdbde2b943",
     "url": "/react-mini-rocket-game/index.html"
   },
   {
-    "revision": "8158ac4c73dde8565cf2",
-    "url": "/react-mini-rocket-game/static/css/main.87b191a6.chunk.css"
+    "revision": "67369e3f3f84fdd6996e",
+    "url": "/react-mini-rocket-game/static/css/main.a51fffc1.chunk.css"
   },
   {
     "revision": "9e0892db084030c73a24",
     "url": "/react-mini-rocket-game/static/js/2.555e5a00.chunk.js"
   },
   {
-    "revision": "8158ac4c73dde8565cf2",
-    "url": "/react-mini-rocket-game/static/js/main.748c34c4.chunk.js"
+    "revision": "67369e3f3f84fdd6996e",
+    "url": "/react-mini-rocket-game/static/js/main.e0594848.chunk.js"
   },
   {
     "revision": "60d051a92fdce628f8bc",

@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-mini-rocket-game/static/css/main.87b191a6.chunk.css",
-    "main.js": "/react-mini-rocket-game/static/js/main.748c34c4.chunk.js",
-    "main.js.map": "/react-mini-rocket-game/static/js/main.748c34c4.chunk.js.map",
+    "main.css": "/react-mini-rocket-game/static/css/main.a51fffc1.chunk.css",
+    "main.js": "/react-mini-rocket-game/static/js/main.e0594848.chunk.js",
+    "main.js.map": "/react-mini-rocket-game/static/js/main.e0594848.chunk.js.map",
     "runtime-main.js": "/react-mini-rocket-game/static/js/runtime-main.81a4de54.js",
     "runtime-main.js.map": "/react-mini-rocket-game/static/js/runtime-main.81a4de54.js.map",
     "static/js/2.555e5a00.chunk.js": "/react-mini-rocket-game/static/js/2.555e5a00.chunk.js",
     "static/js/2.555e5a00.chunk.js.map": "/react-mini-rocket-game/static/js/2.555e5a00.chunk.js.map",
     "index.html": "/react-mini-rocket-game/index.html",
-    "precache-manifest.9c8069fdd541d061ae4276552db0bf57.js": "/react-mini-rocket-game/precache-manifest.9c8069fdd541d061ae4276552db0bf57.js",
+    "precache-manifest.c10c5a87279e74b3b7ef69423333dddf.js": "/react-mini-rocket-game/precache-manifest.c10c5a87279e74b3b7ef69423333dddf.js",
     "service-worker.js": "/react-mini-rocket-game/service-worker.js",
-    "static/css/main.87b191a6.chunk.css.map": "/react-mini-rocket-game/static/css/main.87b191a6.chunk.css.map",
+    "static/css/main.a51fffc1.chunk.css.map": "/react-mini-rocket-game/static/css/main.a51fffc1.chunk.css.map",
     "static/media/alien.png": "/react-mini-rocket-game/static/media/alien.98390e3b.png",
     "static/media/style.module.css": "/react-mini-rocket-game/static/media/cosmonaut.8f36471d.png",
     "static/media/rocketone.png": "/react-mini-rocket-game/static/media/rocketone.2a5863b5.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.81a4de54.js",
     "static/js/2.555e5a00.chunk.js",
-    "static/css/main.87b191a6.chunk.css",
-    "static/js/main.748c34c4.chunk.js"
+    "static/css/main.a51fffc1.chunk.css",
+    "static/js/main.e0594848.chunk.js"
   ]
 }
