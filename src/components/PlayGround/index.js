@@ -38,6 +38,10 @@ export default class PlayGround extends Component {
     }
 
     isColision() {
+        
+    }
+
+    setColision() {
 
     }
 
