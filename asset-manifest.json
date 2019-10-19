@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-mini-rocket-game/static/css/main.a51fffc1.chunk.css",
-    "main.js": "/react-mini-rocket-game/static/js/main.e0594848.chunk.js",
-    "main.js.map": "/react-mini-rocket-game/static/js/main.e0594848.chunk.js.map",
+    "main.js": "/react-mini-rocket-game/static/js/main.4dd9fd1b.chunk.js",
+    "main.js.map": "/react-mini-rocket-game/static/js/main.4dd9fd1b.chunk.js.map",
     "runtime-main.js": "/react-mini-rocket-game/static/js/runtime-main.81a4de54.js",
     "runtime-main.js.map": "/react-mini-rocket-game/static/js/runtime-main.81a4de54.js.map",
     "static/js/2.555e5a00.chunk.js": "/react-mini-rocket-game/static/js/2.555e5a00.chunk.js",
     "static/js/2.555e5a00.chunk.js.map": "/react-mini-rocket-game/static/js/2.555e5a00.chunk.js.map",
     "index.html": "/react-mini-rocket-game/index.html",
-    "precache-manifest.c10c5a87279e74b3b7ef69423333dddf.js": "/react-mini-rocket-game/precache-manifest.c10c5a87279e74b3b7ef69423333dddf.js",
+    "precache-manifest.2405b8f7de58c5dd8b7d33ab5de8f919.js": "/react-mini-rocket-game/precache-manifest.2405b8f7de58c5dd8b7d33ab5de8f919.js",
     "service-worker.js": "/react-mini-rocket-game/service-worker.js",
     "static/css/main.a51fffc1.chunk.css.map": "/react-mini-rocket-game/static/css/main.a51fffc1.chunk.css.map",
     "static/media/alien.png": "/react-mini-rocket-game/static/media/alien.98390e3b.png",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.81a4de54.js",
     "static/js/2.555e5a00.chunk.js",
     "static/css/main.a51fffc1.chunk.css",
-    "static/js/main.e0594848.chunk.js"
+    "static/js/main.4dd9fd1b.chunk.js"
   ]
 }
