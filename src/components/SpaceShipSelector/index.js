@@ -7,12 +7,13 @@ const SpaceShipSelector = () => {
 
     return (
         <div className={style.wrapper}>
-            {SPACESHIPS.map(spaceShip => (
+            {SPACESHIPS.map((spaceShip, index) => (
                 <SpaceShipSelectorItem
                     key={spaceShip.id}
                     id={spaceShip.id}
                     url={spaceShip.url}
                     name={spaceShip.name}
+                    index={index}
                 />
             ))}
         </div>
