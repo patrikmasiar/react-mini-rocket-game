@@ -27,7 +27,7 @@ export default class PlayGround extends Component {
             this.playgroundHeight = this.playGroundRef.offsetHeight;
             this.setState({
                 rocketBottomPosition: 10,
-                rocketLeftPosition: this.playgroundWidth / 2 - 60,
+                rocketLeftPosition: this.playgroundWidth / 2 - 45,
             });
             this.setAlienPosition(this.playGroundRef.offsetWidth, this.playGroundRef.offsetHeight);
         }
@@ -38,7 +38,6 @@ export default class PlayGround extends Component {
     }
 
     isColision() {
-        
     }
 
     setColision() {
@@ -73,7 +72,7 @@ export default class PlayGround extends Component {
     handleGoUp = () => {
         this.spaceShipRef.goUp();
         this.setState(prevState => {
-            if (prevState.rocketBottomPosition + 160 > this.playgroundHeight) {
+            if (prevState.rocketBottomPosition + 180 > this.playgroundHeight) {
                 return;
             }
 
@@ -106,7 +105,7 @@ export default class PlayGround extends Component {
     handleGoRight = () => {
         this.spaceShipRef.goRight();        
         this.setState(prevState => {
-            if (prevState.rocketLeftPosition + 155 > this.playgroundWidth) {
+            if (prevState.rocketLeftPosition + 160 > this.playgroundWidth) {
                 return;
             }
 
