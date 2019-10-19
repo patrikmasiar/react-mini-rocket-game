@@ -63,14 +63,13 @@ export default class PlayGround extends Component {
 
     setColision = () => {
         this.setAlienPosition(this.playGroundRef.offsetWidth, this.playGroundRef.offsetHeight);
-        this.props.setScore();
     }
 
     setAlienPosition = (maxX, maxY) => {
         this.setState({
             leftAlienPosition:this.getRandomInt(maxX - 100),
             bottomAlienPosition: this.getRandomInt(maxY - 100),
-        })
+        });
     };
     
     handleKeyDown = keyCode => {

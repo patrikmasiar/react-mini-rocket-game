@@ -10,11 +10,9 @@ const Game = ({appData}) => {
             <TopBarInfo
                 username={appData.username}
                 spaceshipId={appData.spaceshipId}
-                score={appData.score}
             />
             <PlayGround
                 spaceshipId={appData.spaceshipId}
-                setScore={() => appData.setScore()}
             /> 
         </div>
     );

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import style from './style.module.css';
 import { SPACESHIPS } from '../../constants/objects';
 
-const TopBarInfo = ({username, spaceshipId, score}) => (
+const TopBarInfo = ({username, spaceshipId}) => (
     <div className={style.wrapper}>
         <div className={style.avatar} />
         <span className={style.label}>
@@ -16,12 +16,6 @@ const TopBarInfo = ({username, spaceshipId, score}) => (
             SPACESHIP:
             <span className={style.userName}>
                 {SPACESHIPS.find(spaceship => spaceship.id === spaceshipId).name}
-            </span>
-        </span>
-        <span className={style.label}>
-            CATCHES:
-            <span className={style.userName}>
-                {score}
             </span>
         </span>
     </div>
