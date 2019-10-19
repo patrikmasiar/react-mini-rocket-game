@@ -28,9 +28,21 @@ export default class PlayGround extends Component {
             this.setState({
                 rocketBottomPosition: 10,
                 rocketLeftPosition: this.playgroundWidth / 2 - 60,
-            })
+            });
+            this.setAlienPosition(this.playGroundRef.offsetWidth, this.playGroundRef.offsetHeight);
         }
     }
+
+    getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+    }
+
+    setAlienPosition = (maxX, maxY) => {
+        this.setState({
+            leftAlienPosition:this.getRandomInt(maxY),
+            bottomAlienPosition: this.getRandomInt(maxY),
+        })
+    };
     
     handleKeyDown = keyCode => {
         // eslint-disable-next-line default-case
