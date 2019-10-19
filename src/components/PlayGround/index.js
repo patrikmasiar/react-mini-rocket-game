@@ -91,7 +91,6 @@ export default class PlayGround extends Component {
     handleGoLeft = () => {
         this.spaceShipRef.goLeft();
         this.setState(prevState => {
-            console.log(prevState.rocketLeftPosition)
             if (prevState.rocketLeftPosition <= 20) {
                 return;
             }
@@ -103,7 +102,6 @@ export default class PlayGround extends Component {
     handleGoRight = () => {
         this.spaceShipRef.goRight();        
         this.setState(prevState => {
-            console.log(prevState.rocketLeftPosition)
             if (prevState.rocketLeftPosition + 155 > this.playgroundWidth) {
                 return;
             }
