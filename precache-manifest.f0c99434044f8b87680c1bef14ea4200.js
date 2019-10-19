@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0ddfb8e5ca74a0fcb0004530a62723e8",
+    "revision": "89ea7b426df20e033936fe6595762fa4",
     "url": "/react-mini-rocket-game/index.html"
   },
   {
-    "revision": "c15852647e3159a09db6",
-    "url": "/react-mini-rocket-game/static/css/main.963bb9f2.chunk.css"
+    "revision": "89fe80606493dea30ed7",
+    "url": "/react-mini-rocket-game/static/css/main.87b191a6.chunk.css"
   },
   {
-    "revision": "3dfe8bbfb97905a1be26",
-    "url": "/react-mini-rocket-game/static/js/2.e0896a96.chunk.js"
+    "revision": "9e0892db084030c73a24",
+    "url": "/react-mini-rocket-game/static/js/2.555e5a00.chunk.js"
   },
   {
-    "revision": "c15852647e3159a09db6",
-    "url": "/react-mini-rocket-game/static/js/main.f057e4fa.chunk.js"
+    "revision": "89fe80606493dea30ed7",
+    "url": "/react-mini-rocket-game/static/js/main.4b1f249a.chunk.js"
   },
   {
     "revision": "60d051a92fdce628f8bc",
     "url": "/react-mini-rocket-game/static/js/runtime-main.81a4de54.js"
+  },
+  {
+    "revision": "98390e3b6633351afe8a11d9231cbf62",
+    "url": "/react-mini-rocket-game/static/media/alien.98390e3b.png"
   },
   {
     "revision": "8f36471d9743261a4c50a2f414ec0887",
