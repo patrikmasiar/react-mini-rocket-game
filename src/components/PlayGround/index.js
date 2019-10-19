@@ -4,6 +4,7 @@ import KeyboardListener from '../KeyboardListener';
 import PlayerShip from '../PlayerShip';
 import { SPACESHIPS } from '../../constants/objects';
 import { KeyCodes } from '../../constants';
+import Alien from '../Enemy';
 
 export default class PlayGround extends Component {
 
@@ -16,6 +17,8 @@ export default class PlayGround extends Component {
     state = {
         rocketBottomPosition: 0,
         rocketLeftPosition: 0,
+        leftAlienPosition: 0,
+        bottomAlienPosition: 0,
     };
 
     componentDidMount() {
@@ -95,13 +98,17 @@ export default class PlayGround extends Component {
 
     render() {
         const {spaceshipId} = this.props;
-        const {rocketLeftPosition, rocketBottomPosition} = this.state;
+        const {rocketLeftPosition, rocketBottomPosition, leftAlienPosition, bottomAlienPosition} = this.state;
 
         return (
             <KeyboardListener
                 onKeyDown={this.handleKeyDown}
             >
                 <div className={style.wrapper} ref={ref => this.playGroundRef = ref}>
+                    <Alien
+                        leftPosition={leftAlienPosition}
+                        bottomPosition={bottomAlienPosition}
+                    />
                     <PlayerShip
                         ref={ref => this.spaceShipRef = ref}
                         bottomPosition={rocketBottomPosition}
