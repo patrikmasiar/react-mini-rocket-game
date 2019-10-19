@@ -8,12 +8,23 @@ import { KeyCodes } from '../../constants';
 export default class PlayGround extends Component {
 
     spaceShipRef = null;
+    playGroundRef = null;
+
+    playgroundWidth = 0;
+    playgroundHeight = 0;
 
     state = {
         rocketBottomPosition: 0,
         rocketLeftPosition: 0,
     };
 
+    componentDidMount() {
+        if (this.playGroundRef !== null) {
+            this.playgroundWidth = this.playGroundRef.offsetWidth;
+            this.playgroundHeight = this.playGroundRef.offsetHeight;
+        }
+    }
+    
     handleKeyDown = keyCode => {
         // eslint-disable-next-line default-case
         switch(keyCode) {
@@ -34,30 +45,48 @@ export default class PlayGround extends Component {
 
     handleGoUp = () => {
         this.spaceShipRef.goUp();
-        this.setState(prevState => ({
-            rocketBottomPosition: prevState.rocketBottomPosition + 10,
-        }));
+        this.setState(prevState => {
+            if (prevState.rocketBottomPosition + 160 > this.playgroundHeight) {
+                return;
+            }
+
+            return {rocketBottomPosition: prevState.rocketBottomPosition + 15};
+        });
     };
 
     handleGoDown = () => {
         this.spaceShipRef.goDown();
-        this.setState(prevState => ({
-            rocketBottomPosition: prevState.rocketBottomPosition - 10,
-        }));
+        this.setState(prevState => {
+            if (prevState.rocketBottomPosition <= 0) {
+                return;
+            }
+
+            return {rocketBottomPosition: prevState.rocketBottomPosition - 15};
+        });
     };
 
     handleGoLeft = () => {
         this.spaceShipRef.goLeft();
-        this.setState(prevState => ({
-            rocketLeftPosition: prevState.rocketLeftPosition - 10,
-        }));
+        this.setState(prevState => {
+            console.log(prevState.rocketLeftPosition)
+            if (prevState.rocketLeftPosition <= 20) {
+                return;
+            }
+
+            return {rocketLeftPosition: prevState.rocketLeftPosition - 15};
+        });
     };
 
     handleGoRight = () => {
         this.spaceShipRef.goRight();        
-        this.setState(prevState => ({
-            rocketLeftPosition: prevState.rocketLeftPosition + 10,
-        }));
+        this.setState(prevState => {
+            console.log(prevState.rocketLeftPosition)
+            if (prevState.rocketLeftPosition + 155 > this.playgroundWidth) {
+                return;
+            }
+
+            return {rocketLeftPosition: prevState.rocketLeftPosition + 15};
+        });
     };
 
     render() {
@@ -68,7 +97,7 @@ export default class PlayGround extends Component {
             <KeyboardListener
                 onKeyDown={this.handleKeyDown}
             >
-                <div className={style.wrapper}>
+                <div className={style.wrapper} ref={ref => this.playGroundRef = ref}>
                     <PlayerShip
                         ref={ref => this.spaceShipRef = ref}
                         bottomPosition={rocketBottomPosition}
