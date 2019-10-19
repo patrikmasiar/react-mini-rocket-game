@@ -1,8 +1,25 @@
 .spaceship {
-    width: 70px;
-    height: 100px;
+    width: 120px;
+    height: 150px;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
     position: absolute;
+    transition: all 250ms ease-out;
+}
+
+.rotationLeft {
+    transform: rotate(-90deg);
+}
+
+.rotationRight {
+    transform: rotate(90deg);
+}
+
+.rotationDown {
+    transform: rotate(180deg);
+}
+
+.rotationUp {
+    transform: rotate(0deg);
 }

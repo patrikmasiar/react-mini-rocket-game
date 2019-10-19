@@ -1,47 +1,51 @@
 import React, { Component } from 'react';
 import style from './style.module.css';
 
+import * as classes from 'react-style-classes';
+
 export default class PlayerShip extends Component {
 
-    state = {
-        bottomPosition: 0,
-        leftPosition: 0,
-    }
-
     spaceShipRef = null;
+    rotation = 'top';
 
     goUp() {
-        this.setState(prevState => ({
-            bottomPosition: prevState.bottomPosition + 5,
-        }));
+        this.rotation = 'top';
     };
 
     goDown() {
-        this.setState(prevState => ({
-            bottomPosition: prevState.bottomPosition - 5,
-        }));
+        this.rotation = 'down';
     };
 
     goLeft() {
-        this.setState(prevState => ({
-            leftPosition: prevState.leftPosition - 5,
-        }));
+        this.rotation = 'left';
     };
 
     goRight() {
-        this.setState(prevState => ({
-            leftPosition: prevState.leftPosition + 5,
-        }));
-    };
+        this.rotation = 'right';
+    }
+
+    getRotationStyle() {
+        switch(this.rotation) {
+            case 'top':
+                return style.rotationTop;
+            case 'down':
+                return style.rotationDown;
+            case 'left':
+                return style.rotationLeft;
+            case 'right':
+                return style.rotationRight;
+            default:
+                return style.rotationTop;
+        }
+    }
 
     render() {
-        const {rocketUrl} = this.props;
-        const {bottomPosition, leftPosition} = this.state;
+        const {rocketUrl, bottomPosition, leftPosition} = this.props;
 
         return (
             <div
                 ref={ref => this.spaceShipRef = ref}
-                className={style.spaceship}
+                className={classes(style.spaceship, this.getRotationStyle())}
                 style={{
                     backgroundImage: `url(${rocketUrl})`,
                     bottom: bottomPosition,
