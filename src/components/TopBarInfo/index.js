@@ -19,7 +19,7 @@ const TopBarInfo = ({username, spaceshipId, score}) => (
             </span>
         </span>
         <span className={style.label}>
-            SCORE:
+            CATCHES:
             <span className={style.userName}>
                 {score}
             </span>
