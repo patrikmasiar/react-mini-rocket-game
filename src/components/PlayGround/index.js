@@ -37,9 +37,13 @@ export default class PlayGround extends Component {
         return Math.floor(Math.random() * Math.floor(max));
     }
 
+    isColision() {
+
+    }
+
     setAlienPosition = (maxX, maxY) => {
         this.setState({
-            leftAlienPosition:this.getRandomInt(maxY),
+            leftAlienPosition:this.getRandomInt(maxX),
             bottomAlienPosition: this.getRandomInt(maxY),
         })
     };
