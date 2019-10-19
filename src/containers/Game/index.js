@@ -1,22 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import style from './style.module.css';
-import KeyboardListener from '../../components/KeyboardListener';
+// import style from './style.module.css';
+// import KeyboardListener from '../../components/KeyboardListener';
 import TopBarInfo from '../../components/TopBarInfo';
+import PlayGround from '../../components/PlayGround';
 
 const Game = ({appData}) => {
 
-    const onKeyDown = keyCode => {
-        console.log(keyCode)
-    };
-
     return (
-        <KeyboardListener onKeyDown={onKeyDown}>
+        <div style={{height: '100%'}}>
             <TopBarInfo username={appData.username} spaceshipId={appData.spaceshipId} />
-            <div>
-
-            </div>
-        </KeyboardListener>
+            <PlayGround /> 
+        </div>
     );
 };
 
