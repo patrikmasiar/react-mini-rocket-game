@@ -5,7 +5,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     position: absolute;
-    transition: all 250ms ease-out;
+    transition: all 150ms ease-out;
 }
 
 .rotationLeft {
