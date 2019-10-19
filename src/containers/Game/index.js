@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import style from './style.module.css';
-// import KeyboardListener from '../../components/KeyboardListener';
 import TopBarInfo from '../../components/TopBarInfo';
 import PlayGround from '../../components/PlayGround';
 
@@ -12,6 +10,7 @@ const Game = ({appData}) => {
             <TopBarInfo
                 username={appData.username}
                 spaceshipId={appData.spaceshipId}
+                score={appData.score}
             />
             <PlayGround
                 spaceshipId={appData.spaceshipId}
