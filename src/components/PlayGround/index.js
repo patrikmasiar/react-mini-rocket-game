@@ -22,6 +22,10 @@ export default class PlayGround extends Component {
         if (this.playGroundRef !== null) {
             this.playgroundWidth = this.playGroundRef.offsetWidth;
             this.playgroundHeight = this.playGroundRef.offsetHeight;
+            this.setState({
+                rocketBottomPosition: 10,
+                rocketLeftPosition: this.playgroundWidth / 2 - 60,
+            })
         }
     }
     
