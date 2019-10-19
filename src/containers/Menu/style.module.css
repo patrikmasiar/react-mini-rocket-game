@@ -5,12 +5,36 @@
     justify-content: center;
     height: 100vh;
     flex-direction: column;
+    position: relative;
+}
+
+
+.bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../../images/star.png'), url('../../images/spacestation.png');
+    background-position: 0% 0%, 90% 80%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 10%, 25%;
+    opacity: 0.2;
+    z-index: -1;
 }
 
 .title {
     font-weight: bold;
     font-size: 45px;
+    display: flex;
     text-shadow: 3px 3px 5px #000;
+    align-items: center;
+}
+
+.alien {
+    width: auto;
+    height: 45px;
+    margin-left: 20px;
 }
 
 .input {
