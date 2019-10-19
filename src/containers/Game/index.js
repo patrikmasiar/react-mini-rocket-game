@@ -9,8 +9,13 @@ const Game = ({appData}) => {
 
     return (
         <div style={{height: '100%'}}>
-            <TopBarInfo username={appData.username} spaceshipId={appData.spaceshipId} />
-            <PlayGround /> 
+            <TopBarInfo
+                username={appData.username}
+                spaceshipId={appData.spaceshipId}
+            />
+            <PlayGround
+                spaceshipId={appData.spaceshipId}
+            /> 
         </div>
     );
 };
