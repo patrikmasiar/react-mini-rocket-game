@@ -14,6 +14,7 @@ const Game = ({appData}) => {
             />
             <PlayGround
                 spaceshipId={appData.spaceshipId}
+                setScore={() => appData.setScore()}
             /> 
         </div>
     );

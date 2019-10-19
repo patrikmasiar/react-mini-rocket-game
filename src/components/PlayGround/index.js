@@ -17,8 +17,8 @@ export default class PlayGround extends Component {
     state = {
         rocketBottomPosition: 0,
         rocketLeftPosition: 0,
-        leftAlienPosition: 0,
-        bottomAlienPosition: 0,
+        leftAlienPosition: 150,
+        bottomAlienPosition: 150,
     };
 
     componentDidMount() {
@@ -33,15 +33,37 @@ export default class PlayGround extends Component {
         }
     }
 
+    componentDidUpdate(prevProps, prevState) {
+        this.isColision();
+    }
+
     getRandomInt(max) {
         return Math.floor(Math.random() * Math.floor(max));
     }
 
     isColision() {
+        const {rocketLeftPosition, rocketBottomPosition, leftAlienPosition, bottomAlienPosition} = this.state;
+
+        const spaceship = {x: rocketLeftPosition, y: rocketBottomPosition, width: 90, height: 175};
+        const enemy = {x: leftAlienPosition, y: bottomAlienPosition, width: 100, height: 100};
+
+        if (this.isCollide(spaceship, enemy)) {
+            this.setColision();
+        }
     }
 
-    setColision() {
+    isCollide(a, b) {
+        return !(
+            ((a.y + a.height) < (b.y)) ||
+            (a.y > (b.y + b.height)) ||
+            ((a.x + a.width) < b.x) ||
+            (a.x > (b.x + b.width))
+        );
+    }
 
+    setColision = () => {
+        this.setAlienPosition(this.playGroundRef.offsetWidth, this.playGroundRef.offsetHeight);
+        this.props.setScore();
     }
 
     setAlienPosition = (maxX, maxY) => {
