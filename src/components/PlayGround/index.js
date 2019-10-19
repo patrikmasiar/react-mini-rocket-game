@@ -68,8 +68,8 @@ export default class PlayGround extends Component {
 
     setAlienPosition = (maxX, maxY) => {
         this.setState({
-            leftAlienPosition:this.getRandomInt(maxX),
-            bottomAlienPosition: this.getRandomInt(maxY),
+            leftAlienPosition:this.getRandomInt(maxX - 100),
+            bottomAlienPosition: this.getRandomInt(maxY - 100),
         })
     };
     
