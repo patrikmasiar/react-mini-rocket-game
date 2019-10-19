@@ -144,6 +144,7 @@ export default class PlayGround extends Component {
                 onKeyDown={this.handleKeyDown}
             >
                 <div className={style.wrapper} ref={ref => this.playGroundRef = ref}>
+                    <div className={style.bg} />
                     <Alien
                         leftPosition={leftAlienPosition}
                         bottomPosition={bottomAlienPosition}

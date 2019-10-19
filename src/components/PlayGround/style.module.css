@@ -4,3 +4,16 @@
     position: relative;
     overflow: hidden;
 }
+
+.bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../../images/planet.png'), url('../../images//planet.png');
+    background-position: 10% 20%, 80% 5%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 200px, 150px;
+    opacity: 0.3;
+}
