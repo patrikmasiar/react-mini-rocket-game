@@ -20,7 +20,7 @@ const Menu = ({appData}) => {
 
     return (
         <div className={style.wrapper}>
-            <span className={style.title}>Select your Spaceship</span>
+            <span className={style.title}>Catch an Alien</span>
             <SpaceShipSelector />
             <input
                 className={style.input}

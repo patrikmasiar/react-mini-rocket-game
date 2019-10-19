@@ -1,5 +1,17 @@
 .wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
     display: flex;
     flex-direction: row;
-    margin-top: 70px;
+}
+
+.title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;;
 }

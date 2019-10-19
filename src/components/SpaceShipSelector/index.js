@@ -7,15 +7,18 @@ const SpaceShipSelector = () => {
 
     return (
         <div className={style.wrapper}>
-            {SPACESHIPS.map((spaceShip, index) => (
-                <SpaceShipSelectorItem
-                    key={spaceShip.id}
-                    id={spaceShip.id}
-                    url={spaceShip.url}
-                    name={spaceShip.name}
-                    index={index}
-                />
-            ))}
+            <span className={style.title}>Select your spaceship</span>
+            <div className={style.list}>
+                {SPACESHIPS.map((spaceShip, index) => (
+                    <SpaceShipSelectorItem
+                        key={spaceShip.id}
+                        id={spaceShip.id}
+                        url={spaceShip.url}
+                        name={spaceShip.name}
+                        index={index}
+                    />
+                ))}
+            </div>
         </div>
     );
 };
