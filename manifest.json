@@ -1,7 +1,7 @@
 {
   "short_name": "Catch an Alien - Rocket game",
   "name": "Catch an Alien - Rocket game",
-  "description": "Mini game, where you have to catch the alien and save our planet.",
+  "description": "Mini game, in which you have to catch the alien and save our planet.",
   "icons": [
     {
       "src": "alien.png",

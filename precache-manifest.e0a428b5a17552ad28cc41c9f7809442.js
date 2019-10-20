@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4dd79c364870586a59580c9a251aec24",
+    "revision": "d567345aeaa1b64f1c1bf85fc4b3b389",
     "url": "/react-mini-rocket-game/index.html"
   },
   {
