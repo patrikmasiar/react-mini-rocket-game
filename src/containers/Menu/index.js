@@ -22,7 +22,7 @@ const Menu = ({appData}) => {
         <div className={style.wrapper}>
             <div className={style.bg} />
             <span className={style.title}>
-                Catch an Alien
+                Catch the Alien
                 <img src={require("../../images/alien.png")} className={style.alien} alt="Alien" />
             </span>
             <SpaceShipSelector />
