@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-mini-rocket-game/static/css/main.f5b50440.chunk.css",
-    "main.js": "/react-mini-rocket-game/static/js/main.57008f10.chunk.js",
-    "main.js.map": "/react-mini-rocket-game/static/js/main.57008f10.chunk.js.map",
+    "main.css": "/react-mini-rocket-game/static/css/main.ada5ded4.chunk.css",
+    "main.js": "/react-mini-rocket-game/static/js/main.a67390ab.chunk.js",
+    "main.js.map": "/react-mini-rocket-game/static/js/main.a67390ab.chunk.js.map",
     "runtime-main.js": "/react-mini-rocket-game/static/js/runtime-main.81a4de54.js",
     "runtime-main.js.map": "/react-mini-rocket-game/static/js/runtime-main.81a4de54.js.map",
     "static/js/2.f85c5884.chunk.js": "/react-mini-rocket-game/static/js/2.f85c5884.chunk.js",
     "static/js/2.f85c5884.chunk.js.map": "/react-mini-rocket-game/static/js/2.f85c5884.chunk.js.map",
     "index.html": "/react-mini-rocket-game/index.html",
-    "precache-manifest.958bfd8dc5f6bc0fdee4aadf749ee282.js": "/react-mini-rocket-game/precache-manifest.958bfd8dc5f6bc0fdee4aadf749ee282.js",
+    "precache-manifest.e3d93f8deab59422e1f06d16a0816828.js": "/react-mini-rocket-game/precache-manifest.e3d93f8deab59422e1f06d16a0816828.js",
     "service-worker.js": "/react-mini-rocket-game/service-worker.js",
-    "static/css/main.f5b50440.chunk.css.map": "/react-mini-rocket-game/static/css/main.f5b50440.chunk.css.map",
+    "static/css/main.ada5ded4.chunk.css.map": "/react-mini-rocket-game/static/css/main.ada5ded4.chunk.css.map",
     "static/media/alien.png": "/react-mini-rocket-game/static/media/alien.98390e3b.png",
     "static/media/style.module.css": "/react-mini-rocket-game/static/media/star.547d2ad4.png",
     "static/media/rocketone.png": "/react-mini-rocket-game/static/media/rocketone.2a5863b5.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.81a4de54.js",
     "static/js/2.f85c5884.chunk.js",
-    "static/css/main.f5b50440.chunk.css",
-    "static/js/main.57008f10.chunk.js"
+    "static/css/main.ada5ded4.chunk.css",
+    "static/js/main.a67390ab.chunk.js"
   ]
 }
