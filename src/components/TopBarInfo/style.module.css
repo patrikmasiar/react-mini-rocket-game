@@ -26,3 +26,22 @@
     font-weight: 400;
     margin-left: 5px;
 }
+
+.endGameButton {
+    padding: 5px 15px;
+    outline: none;
+    border: 2px solid transparent;
+    font-size: 14px;
+    font-weight: bold;
+    background: #ff6c36;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 250ms ease-out;
+    margin-left: auto;
+}
+
+.endGameButton:hover {
+    border: 2px solid rgba(0,0,0,0.9);
+    box-shadow: 2px 2px 5px #000;
+}

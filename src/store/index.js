@@ -26,7 +26,7 @@ export class AppProvider extends Component {
   };
 
   setScreenMenu = () => {
-    this.setState({screen: 'menu'});
+    this.setState({screen: 'menu', spaceshipId: null, username: ''});
   };
 
   setScore = () => {

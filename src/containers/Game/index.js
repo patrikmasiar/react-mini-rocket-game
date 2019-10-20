@@ -10,6 +10,7 @@ const Game = ({appData}) => {
             <TopBarInfo
                 username={appData.username}
                 spaceshipId={appData.spaceshipId}
+                onEndGame={() => appData.setScreenMenu()}
             />
             <PlayGround
                 spaceshipId={appData.spaceshipId}
