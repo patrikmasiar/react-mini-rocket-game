@@ -29,7 +29,7 @@ export class AppProvider extends Component {
   };
 
   setScreenMenu = () => {
-    this.setState({screen: 'menu', spaceshipId: null, username: ''});
+    this.setState({screen: 'menu', spaceshipId: null, username: '', score: 0});
   };
 
   increaseScore = () => {
