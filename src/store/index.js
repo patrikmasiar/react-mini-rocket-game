@@ -5,11 +5,14 @@ const AppContext = createContext({
   username: '',
   screen: 'menu',
   score: 0,
+  isGameOver: false,
   setSpaceshipId: () => {},
   setUsername: () => {},
   setScreenGame: () => {},
   setScreenMenu: () => {},
-  setScrote: () => {},
+  increaseScore: () => {},
+  decreaseScore: () => {},
+  setGameOver: () => {},
 });
 
 export class AppProvider extends Component {
@@ -29,10 +32,20 @@ export class AppProvider extends Component {
     this.setState({screen: 'menu', spaceshipId: null, username: ''});
   };
 
-  setScore = () => {
+  increaseScore = () => {
     this.setState(prevState => ({
       score: prevState.score + 1
     }));
+  };
+
+  decreaseScore = () => {
+    this.setState(prevState => ({
+      score: prevState.score - 1
+    }));
+  };
+
+  setGameOver = () => {
+    this.setState({isGameOver: true});
   };
 
   state = {
@@ -44,7 +57,9 @@ export class AppProvider extends Component {
     setUsername: this.setUsername,
     setScreenGame: this.setScreenGame,
     setScreenMenu: this.setScreenMenu,
-    setScore: this.setScore,
+    increaseScore: this.increaseScore,
+    decreaseScore: this.decreaseScore,
+    setGameOver: this.setGameOver,
   };
 
   render() {

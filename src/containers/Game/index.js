@@ -11,9 +11,11 @@ const Game = ({appData}) => {
                 username={appData.username}
                 spaceshipId={appData.spaceshipId}
                 onEndGame={() => appData.setScreenMenu()}
+                score={appData.score}
             />
             <PlayGround
                 spaceshipId={appData.spaceshipId}
+                increaseScore={() => appData.increaseScore()}
             /> 
         </div>
     );

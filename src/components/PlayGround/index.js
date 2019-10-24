@@ -21,6 +21,8 @@ export default class PlayGround extends Component {
         bottomAlienPosition: 150,
     };
 
+    alienTimeout = null;
+
     componentDidMount() {
         if (this.playGroundRef !== null) {
             this.playgroundWidth = this.playGroundRef.offsetWidth;
@@ -62,7 +64,12 @@ export default class PlayGround extends Component {
     }
 
     setColision = () => {
-        this.setAlienPosition(this.playGroundRef.offsetWidth, this.playGroundRef.offsetHeight);
+        clearTimeout(this.alienTimeout);
+        this.setAlienPosition(-500, -500);
+        this.props.increaseScore();
+        this.alienTimeout = setTimeout(() => {
+            this.setAlienPosition(this.playGroundRef.offsetWidth, this.playGroundRef.offsetHeight);
+        }, 1000);
     }
 
     setAlienPosition = (maxX, maxY) => {
