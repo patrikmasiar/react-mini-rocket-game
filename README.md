@@ -1,4 +1,4 @@
-# Catch the Alien - mini game
+# Catch the Alien - mini game 👽
 
 **DEMO**: [https://massoprod.github.io/react-mini-rocket-game/](https://massoprod.github.io/react-mini-rocket-game/)
 
